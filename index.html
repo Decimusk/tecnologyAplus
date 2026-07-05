@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecnology A+ | Soluciones Digitales</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Incluimos Font Awesome para los iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <!-- NAVEGACIÓN (Mejorada) -->
+    <nav class="navbar">
+        <div class="logo">Tecnology A+</div>
+        <div class="nav-links">
+            <a href="#servicios">Servicios</a>
+            <a href="grafica/index.html">Producto</a>
+        </div>
+        
+	<button class="cta-btn" onclick="document.getElementById('modal-cotizacion').style.display='block'">Solicitar Cotización</button>
+
+<div id="modal-cotizacion" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="document.getElementById('modal-cotizacion').style.display='none'">&times;</span>
+        <h2>Solicitar Cotización</h2>
+        <form action="https://formspree.io/f/TU_ID_DE_FORMSPREE" method="POST">
+            <input type="text" name="nombre" placeholder="Tu nombre" required>
+            <input type="email" name="email" placeholder="Tu correo" required>
+            <select name="servicio">
+                <option value="investigacion">Asesoría de Investigación</option>
+                <option value="web">Desarrollo Web</option>
+                <option value="apps">Apps Web/Móviles</option>
+                <option value="capacitaciones">Capacitaciones</option>
+            </select>
+            <textarea name="mensaje" placeholder="Describe tu proyecto..." required></textarea>
+            <button type="submit" class="cta-btn">Enviar Solicitud</button>
+        </form>
+    </div>
+</div>
+    </nav>
+
+    <!-- HERO SECTION (Transformado) -->
+    <header class="hero">
+        <div class="hero-title">
+            <h1>Transformamos ideas en soluciones digitales</h1>
+            <p>Expertos en investigación, desarrollo web y capacitación tecnológica.</p>
+            <a href="#servicios" class="cta-btn-large">Descubre Nuestros Servicios</a>
+        </div>
+        <!-- Un elemento visual de fondo sutil -->
+        <div class="hero-overlay"></div>
+    </header>
+
+    <!-- SECCIÓN DE SERVICIOS (Con Iconos) -->
+    <section id="servicios" class="services-section">
+        <h2>Nuestras Soluciones</h2>
+        <div class="services-grid">
+            <!-- Servicio 1: Investigación -->
+            <article class="service-card">
+                <i class="fas fa-search-dollar fa-3x icon-accent"></i>
+                <h3>Asesoría de Investigación</h3>
+                <p>Metodología rigurosa para tesis, artículos científicos y proyectos de innovación académica.</p>
+            </article>
+            
+            <!-- Servicio 2: Web PyME -->
+            <article class="service-card">
+                <i class="fas fa-store fa-3x icon-accent"></i>
+                <h3>Desarrollo Web PyME</h3>
+                <p>Presencia digital profesional, sitios corporativos y e-commerce optimizados para conversión.</p>
+            </article>
+
+             <!-- Servicio 3: Apps -->
+             <article class="service-card">
+                <i class="fas fa-mobile-alt fa-3x icon-accent"></i>
+                <h3>Apps Web y Móviles</h3>
+                <p>Software a medida, escalable y diseñado para cubrir las necesidades específicas de tu modelo de negocio.</p>
+            </article>
+
+             <!-- Servicio 4: Capacitaciones -->
+             <article class="service-card">
+                <i class="fas fa-chalkboard-teacher fa-3x icon-accent"></i>
+                <h3>Capacitaciones Tecnológicas</h3>
+                <p>Programas de actualización para equipos de alto rendimiento en herramientas digitales y desarrollo.</p>
+            </article>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Tecnology A+ | Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Botón flotante de WhatsApp -->
+<a href="https://wa.me/503XXXXXXXX" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+    <!-- Nuestro script para la carga dinámica sigue siendo válido -->
+    <script src="script.js"></script>
+</body>
+</html>
